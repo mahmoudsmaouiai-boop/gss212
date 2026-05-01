@@ -34,9 +34,9 @@
   <meta name="twitter:description" content="Expert en stewarding hôtelier : nettoyage, hygiène HACCP, gestion vaisselle, service 24h/24." />
   <meta name="twitter:image"       content="https://gss212.com/og-image.jpg" />
 
-  <!-- ===== Favicon SVG (lettre G en bleu) ===== -->
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%231B4FD8'/%3E%3Ctext x='16' y='22' font-family='Inter%2CArial%2Csans-serif' font-size='19' font-weight='900' fill='white' text-anchor='middle'%3EG%3C/text%3E%3C/svg%3E" />
-  <link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%231B4FD8'/%3E%3Ctext x='16' y='22' font-family='Inter%2CArial%2Csans-serif' font-size='19' font-weight='900' fill='white' text-anchor='middle'%3EG%3C/text%3E%3C/svg%3E" />
+  <!-- ===== Favicon logo GSS212 ===== -->
+  <link rel="icon" type="image/png" href="logo.png" />
+  <link rel="apple-touch-icon" href="logo.png" />
 
   <!-- ===== Schema.org JSON-LD ===== -->
   <script type="application/ld+json">
@@ -221,23 +221,31 @@
       line-height: 1.1;
       text-decoration: none;
     }
-    .logo-gss {
-      font-size: 1.5rem;
-      font-weight: 900;
-      color: var(--orange);
-      letter-spacing: -.04em;
-      line-height: 1;
+    /* Logo image — navbar */
+    .nav-logo-img {
+      height: 52px;
+      width: auto;
+      display: block;
+      object-fit: contain;
+      filter: drop-shadow(0 2px 4px rgba(0,0,0,.25));
     }
-    .logo-212 {
-      font-size: .9rem;
-      font-weight: 700;
-      letter-spacing: -.02em;
-      line-height: 1;
+
+    /* Logo image — contact panel */
+    .contact-logo-img {
+      height: 90px;
+      width: auto;
+      display: block;
+      object-fit: contain;
     }
-    /* On blue navbar: 212 is light blue */
-    .nav-logo .logo-212 { color: #93C5FD; }
-    /* On white/dark bg (contact panel): 212 is main blue */
-    .contact-id-logo .logo-212 { color: var(--blue); }
+
+    /* Logo image — footer */
+    .footer-logo-img {
+      height: 36px;
+      width: auto;
+      display: inline-block;
+      vertical-align: middle;
+      object-fit: contain;
+    }
 
     .nav-logo .logo-sub {
       font-size: .58rem;
@@ -1997,9 +2005,7 @@
   <div class="container">
     <nav class="nav-inner">
       <a href="#hero" class="nav-logo" aria-label="GSS212 accueil">
-        <span class="logo-gss">GSS</span>
-        <span class="logo-212">212</span>
-        <span class="logo-sub">Gestion de Service Stewarding</span>
+        <img src="logo.png" alt="GSS212 — Gestion de Service Stewarding" class="nav-logo-img" />
       </a>
 
       <ul class="nav-links" role="navigation" aria-label="Navigation principale">
@@ -2761,9 +2767,7 @@
         <div class="contact-id-card">
           <div class="contact-id-glow" aria-hidden="true"></div>
           <div class="contact-id-logo">
-            <span class="logo-gss">GSS</span>
-            <span class="logo-212">212</span>
-            <span class="logo-sub">Gestion de Service Stewarding</span>
+            <img src="logo.png" alt="GSS212" class="contact-logo-img" />
           </div>
           <div class="contact-id-rows">
 
@@ -2891,7 +2895,8 @@
 
 <footer id="footer" aria-label="Pied de page GSS212">
   <div class="footer-simple">
-    <span class="footer-brand-inline"><strong>GSS212</strong> — Gestion de Service Stewarding</span>
+    <img src="logo.png" alt="GSS212" class="footer-logo-img" />
+    <span class="footer-brand-inline">Gestion de Service Stewarding</span>
     <span class="footer-sep">·</span>
     <a href="tel:+212524373808">0524 37 38 08</a>
     <span class="footer-sep">·</span>
