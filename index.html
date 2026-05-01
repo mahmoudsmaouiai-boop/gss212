@@ -10,6 +10,10 @@
   <meta name="keywords" content="stewarding, gestion de service, nettoyage cuisine professionnelle, hygiène HACCP, gestion vaisselle, hôtellerie restauration, service nuit, plonge" />
   <meta name="robots" content="index, follow" />
   <meta name="author" content="GSS212" />
+  <meta name="geo.region" content="MA-05" />
+  <meta name="geo.placename" content="Marrakech, Maroc" />
+  <meta name="geo.position" content="31.6295;-7.9811" />
+  <meta name="ICBM" content="31.6295, -7.9811" />
   <link rel="canonical" href="https://gss212.com/" />
 
   <!-- ===== Open Graph ===== -->
@@ -42,9 +46,16 @@
     "name": "GSS212 — Gestion de Service Stewarding",
     "url": "https://gss212.com",
     "email": "contact@gss212.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Mhamid",
+      "addressLocality": "Marrakech",
+      "addressCountry": "MA"
+    },
+    "telephone": "+212524373808",
     "description": "Expert en gestion de service stewarding pour l'hôtellerie et la restauration.",
     "openingHours": "Mo-Su 00:00-24:00",
-    "areaServed": "France",
+    "areaServed": "Maroc",
     "serviceType": ["Stewarding", "Nettoyage cuisine", "Hygiène HACCP", "Gestion vaisselle"]
   }
   </script>
@@ -1722,102 +1733,25 @@
     ============================================= */
     #footer {
       background: var(--black);
-      padding: 64px 0 32px;
+      padding: 20px 0;
     }
-
-    .footer-top {
-      display: grid;
-      grid-template-columns: 2fr 1fr 1fr 1fr;
-      gap: 48px;
-      padding-bottom: 48px;
-      border-bottom: 1px solid rgba(255,255,255,.1);
-    }
-
-    .footer-brand .logo-main {
-      font-size: 1.6rem;
-      font-weight: 900;
-      color: var(--blue);
-      letter-spacing: -.04em;
-      line-height: 1.1;
-    }
-    .footer-brand .logo-sub {
-      font-size: .65rem;
-      font-weight: 600;
-      color: rgba(255,255,255,.4);
-      text-transform: uppercase;
-      letter-spacing: .12em;
-      display: block;
-      margin-bottom: 16px;
-    }
-    .footer-brand p {
-      font-size: .85rem;
-      color: rgba(255,255,255,.45);
-      line-height: 1.7;
-      max-width: 280px;
-      margin-bottom: 24px;
-    }
-    .footer-social {
+    .footer-simple {
       display: flex;
-      gap: 8px;
-    }
-    .footer-social-btn {
-      width: 38px; height: 38px;
-      border-radius: 8px;
-      background: rgba(255,255,255,.06);
-      border: 1px solid rgba(255,255,255,.1);
-      display: flex;
+      flex-wrap: wrap;
       align-items: center;
       justify-content: center;
-      transition: var(--transition);
-      cursor: pointer;
-    }
-    .footer-social-btn:hover {
-      background: var(--blue);
-      border-color: var(--blue);
-    }
-    .footer-social-btn svg { width: 16px; height: 16px; color: rgba(255,255,255,.6); }
-    .footer-social-btn:hover svg { color: var(--white); }
-
-    .footer-col h4 {
-      font-size: .8rem;
-      font-weight: 700;
-      color: var(--white);
-      text-transform: uppercase;
-      letter-spacing: .1em;
-      margin-bottom: 20px;
-    }
-    .footer-col ul { display: flex; flex-direction: column; gap: 10px; }
-    .footer-col ul li a {
-      font-size: .85rem;
+      gap: 8px 12px;
+      font-size: .82rem;
       color: rgba(255,255,255,.45);
-      transition: var(--transition);
+      padding: 0 24px;
+      text-align: center;
     }
-    .footer-col ul li a:hover { color: var(--white); }
-
-    .footer-bottom {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding-top: 28px;
-      flex-wrap: wrap;
-      gap: 12px;
-    }
-    .footer-copy {
-      font-size: .8rem;
-      color: rgba(255,255,255,.3);
-    }
-    .footer-copy a { color: rgba(255,255,255,.5); }
-    .footer-copy a:hover { color: var(--white); }
-    .footer-links-bottom {
-      display: flex;
-      gap: 20px;
-    }
-    .footer-links-bottom a {
-      font-size: .78rem;
-      color: rgba(255,255,255,.3);
-      transition: var(--transition);
-    }
-    .footer-links-bottom a:hover { color: var(--white); }
+    .footer-simple a { color: rgba(255,255,255,.6); transition: var(--transition); }
+    .footer-simple a:hover { color: var(--white); }
+    .footer-brand-inline { color: rgba(255,255,255,.8); }
+    .footer-brand-inline strong { color: var(--blue); }
+    .footer-sep { color: rgba(255,255,255,.2); }
+    .footer-copy { color: rgba(255,255,255,.25); }
 
     /* =============================================
        HERO ENTRANCE ANIMATIONS
@@ -1979,7 +1913,6 @@
     ============================================= */
     @media (max-width: 1080px) {
       .pourquoi-grid { grid-template-columns: repeat(2, 1fr); }
-      .footer-top { grid-template-columns: 1fr 1fr; }
     }
 
     @media (max-width: 1100px) {
@@ -2033,8 +1966,6 @@
     @media (max-width: 600px) {
       .clients-testimonials { grid-template-columns: 1fr; }
       .pourquoi-grid { grid-template-columns: 1fr; }
-      .footer-top { grid-template-columns: 1fr; gap: 32px; }
-      .footer-bottom { flex-direction: column; align-items: flex-start; }
     }
   </style>
 </head>
@@ -2181,40 +2112,10 @@
           Votre référence en<br /><span>Gestion Stewarding</span>
         </h2>
         <p class="section-subtitle">
-          Fondée par des professionnels de l'hôtellerie-restauration, GSS212 apporte une approche structurée et exigeante au département stewarding — souvent invisible, toujours indispensable.
+          Fondée par des professionnels de l'hôtellerie-restauration, GSS212 gère l'intégralité de votre département stewarding — hygiène, matériel, équipes — 24h/24 et 7j/7.
         </p>
 
-        <div class="apropos-pillars">
-          <div class="pillar">
-            <div class="pillar-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 3.75h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008z"/></svg>
-            </div>
-            <div class="pillar-body">
-              <strong>Expertise hôtelière et restauration</strong>
-              <p>Une connaissance approfondie des standards de l'industrie et des exigences opérationnelles des grandes cuisines professionnelles.</p>
-            </div>
-          </div>
-          <div class="pillar">
-            <div class="pillar-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"/></svg>
-            </div>
-            <div class="pillar-body">
-              <strong>Réactivité et adaptabilité</strong>
-              <p>Des équipes mobiles, disponibles à tout moment pour répondre aux pics d'activité, aux événements ou aux urgences sanitaires.</p>
-            </div>
-          </div>
-          <div class="pillar">
-            <div class="pillar-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M10.5 6a7.5 7.5 0 107.5 7.5h-7.5V6z"/><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 10.5H21A7.5 7.5 0 0013.5 3v7.5z"/></svg>
-            </div>
-            <div class="pillar-body">
-              <strong>Suivi et reporting détaillé</strong>
-              <p>Rapports de casse, états d'inventaire, bilans d'hygiène — une traçabilité complète pour un pilotage éclairé de votre matériel.</p>
-            </div>
-          </div>
-        </div>
-
-        <a href="#contact" class="btn btn-outline-dark">En savoir plus</a>
+        <a href="#contact" class="btn btn-outline-dark">Demander un devis</a>
       </div>
     </div>
   </div>
@@ -2256,7 +2157,7 @@
           </svg>
         </div>
         <h3 class="service-title">Nettoyage &amp; Désinfection</h3>
-        <p class="service-desc">Nettoyage professionnel en profondeur de toutes les surfaces de cuisine — hottes, fours, planchers, équipements. Désinfection certifiée selon les protocoles HACCP pour une hygiène irréprochable à chaque service.</p>
+        <p class="service-desc">Nettoyage en profondeur de toutes les surfaces : hottes, fours, planchers. Désinfection certifiée HACCP à chaque service.</p>
         <div class="service-tags">
           <span class="service-tag">HACCP</span>
           <span class="service-tag">Surfaces</span>
@@ -2288,7 +2189,7 @@
           </svg>
         </div>
         <h3 class="service-title">Gestion du Matériel</h3>
-        <p class="service-desc">Suivi rigoureux de la vaisselle et du matériel de cuisine — inventaire continu, prévention et rapport de casse, réassort proactif. Chaque pièce est tracée pour garantir disponibilité et intégrité des équipements.</p>
+        <p class="service-desc">Inventaire continu, rapport de casse, réassort proactif. Chaque pièce tracée pour une disponibilité garantie.</p>
         <div class="service-tags">
           <span class="service-tag">Inventaire</span>
           <span class="service-tag">Casse</span>
@@ -2300,53 +2201,9 @@
         </a>
       </div>
 
-      <!-- 03 — Entretien des Locaux -->
-      <div class="service-card reveal reveal-delay-3">
-        <div class="service-num">03</div>
-        <div class="service-icon">
-          <!-- Building / rooms icon -->
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 3.75h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008z"/>
-          </svg>
-        </div>
-        <h3 class="service-title">Entretien des Locaux</h3>
-        <p class="service-desc">Propreté et hygiène de l'ensemble des espaces annexes : zones de stockage, chambres froides, zones de préparation, couloirs de service et locaux de réception des marchandises.</p>
-        <div class="service-tags">
-          <span class="service-tag">Stockage</span>
-          <span class="service-tag">Chambres froides</span>
-          <span class="service-tag">Zones prep</span>
-        </div>
-        <a href="#contact" class="service-link">
-          En savoir plus
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
-        </a>
-      </div>
-
-      <!-- 04 — Assistance Cuisine -->
-      <div class="service-card reveal reveal-delay-1">
-        <div class="service-num">04</div>
-        <div class="service-icon">
-          <!-- Team / users icon -->
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z"/>
-          </svg>
-        </div>
-        <h3 class="service-title">Assistance Cuisine</h3>
-        <p class="service-desc">Accompagnement opérationnel des équipes cuisine pendant les services. Appui logistique direct, débarrassage en continu, approvisionnement des postes et soutien aux équipes en pic d'activité.</p>
-        <div class="service-tags">
-          <span class="service-tag">Support</span>
-          <span class="service-tag">Mise en place</span>
-          <span class="service-tag">Plonge</span>
-        </div>
-        <a href="#contact" class="service-link">
-          En savoir plus
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
-        </a>
-      </div>
-
-      <!-- 05 — Service de Nuit (dark card) -->
+      <!-- 03 — Service de Nuit (dark card) -->
       <div class="service-card night reveal reveal-delay-2">
-        <div class="service-num">05</div>
+        <div class="service-num">03</div>
         <div class="service-icon">
           <!-- Moon / night icon -->
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor">
@@ -2354,7 +2211,7 @@
           </svg>
         </div>
         <h3 class="service-title">Service de Nuit</h3>
-        <p class="service-desc">Prise en charge nocturne complète : nettoyage approfondi post-service, désinfection de l'ensemble de la cuisine et préparation méticuleuse pour le service du lendemain. Rien n'est laissé au hasard.</p>
+        <p class="service-desc">Nettoyage post-service, désinfection complète et préparation de la cuisine pour le service du lendemain.</p>
         <div class="service-tags">
           <span class="service-tag">Post-service</span>
           <span class="service-tag">Nocturne</span>
@@ -2366,7 +2223,7 @@
         </a>
       </div>
 
-      <!-- 06 — Hygiène & Conformité -->
+      <!-- 04 — Hygiène & Conformité -->
       <div class="service-card reveal reveal-delay-3">
         <div class="service-img-wrap">
           <img
@@ -2377,7 +2234,7 @@
             height="220"
           />
         </div>
-        <div class="service-num">06</div>
+        <div class="service-num">04</div>
         <div class="service-icon">
           <!-- Shield check icon -->
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor">
@@ -2385,7 +2242,7 @@
           </svg>
         </div>
         <h3 class="service-title">Hygiène &amp; Conformité</h3>
-        <p class="service-desc">Respect strict des normes sanitaires en vigueur, conduite d'audits internes réguliers et mise en œuvre d'une traçabilité complète des opérations de nettoyage et de désinfection.</p>
+        <p class="service-desc">Respect des normes sanitaires, audits internes réguliers et traçabilité complète des opérations.</p>
         <div class="service-tags">
           <span class="service-tag">Normes</span>
           <span class="service-tag">Audits</span>
@@ -2440,19 +2297,11 @@
         <div class="team-tasks">
           <div class="task-item">
             <div class="task-bullet"></div>
-            <span class="task-text">Nettoyage profond post-service</span>
+            <span class="task-text">Nettoyage &amp; désinfection post-service</span>
           </div>
           <div class="task-item">
             <div class="task-bullet"></div>
-            <span class="task-text">Désinfection complète des cuisines</span>
-          </div>
-          <div class="task-item">
-            <div class="task-bullet"></div>
-            <span class="task-text">Remise en état du matériel</span>
-          </div>
-          <div class="task-item">
-            <div class="task-bullet"></div>
-            <span class="task-text">Préparation pour le service du matin</span>
+            <span class="task-text">Préparation cuisine pour le lendemain</span>
           </div>
         </div>
       </div>
@@ -2549,19 +2398,11 @@
         <div class="team-tasks">
           <div class="task-item">
             <div class="task-bullet"></div>
-            <span class="task-text">Assistance en temps réel pendant les services</span>
+            <span class="task-text">Assistance cuisine &amp; gestion vaisselle</span>
           </div>
           <div class="task-item">
             <div class="task-bullet"></div>
-            <span class="task-text">Gestion de la vaisselle en continu</span>
-          </div>
-          <div class="task-item">
-            <div class="task-bullet"></div>
-            <span class="task-text">Entretien des locaux</span>
-          </div>
-          <div class="task-item">
-            <div class="task-bullet"></div>
-            <span class="task-text">Contrôle hygiène et conformité</span>
+            <span class="task-text">Entretien des locaux &amp; contrôle hygiène</span>
           </div>
         </div>
       </div>
@@ -2579,7 +2420,7 @@
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" width="18" height="18"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
           Demander un devis
         </a>
-        <a href="tel:+33100000000" class="btn btn-outline">
+        <a href="tel:+212524373808" class="btn btn-outline">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" width="18" height="18"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/></svg>
           Nous appeler
         </a>
@@ -2599,9 +2440,6 @@
       <h2 class="section-title" id="clients-title">
         Des clients <span>exigeants</span>, satisfaits
       </h2>
-      <p class="section-subtitle">
-        Hôtels 5 étoiles, restaurants gastronomiques, collectivités, traiteurs événementiels — notre expertise s'adapte à tous les contextes et volumes.
-      </p>
     </div>
 
     <div class="clients-track-wrap reveal">
@@ -2641,43 +2479,7 @@
           <div class="testimonial-avatar">JM</div>
           <div class="testimonial-name">
             <strong>Jean-Marc Lefèvre</strong>
-            <span>Chef Exécutif, Palace 5★ Paris</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="testimonial reveal reveal-delay-2">
-        <div class="testimonial-stars">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-        </div>
-        <p class="testimonial-text">"Leur gestion de l'inventaire vaisselle nous a fait économiser considérablement sur la casse. Le suivi est rigoureux et les rapports mensuels nous aident à anticiper les besoins."</p>
-        <div class="testimonial-author">
-          <div class="testimonial-avatar">SF</div>
-          <div class="testimonial-name">
-            <strong>Sophie Faure</strong>
-            <span>Directrice F&B, Hôtel Resort Lyon</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="testimonial reveal reveal-delay-3">
-        <div class="testimonial-stars">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-        </div>
-        <p class="testimonial-text">"L'audit HACCP passé haut la main grâce à l'organisation de GSS212. Leur connaissance des normes est impressionnante. Partenaire de confiance depuis 3 ans maintenant."</p>
-        <div class="testimonial-author">
-          <div class="testimonial-avatar">TM</div>
-          <div class="testimonial-name">
-            <strong>Thomas Moreau</strong>
-            <span>Responsable Restauration Collective</span>
+            <span>Chef Exécutif, Palace 5★ Marrakech</span>
           </div>
         </div>
       </div>
@@ -2696,7 +2498,7 @@
         Ce qui nous <span>distingue</span>
       </h2>
       <p class="section-subtitle">
-        Nous ne sommes pas un simple prestataire de nettoyage. GSS212 est un partenaire stratégique qui comprend les enjeux opérationnels et économiques de votre établissement.
+        Un partenaire opérationnel, pas un simple prestataire. Voici ce qui fait la différence.
       </p>
     </div>
 
@@ -2706,7 +2508,7 @@
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443m-7.007 11.55A5.981 5.981 0 006.75 15.75v-1.5"/></svg>
         </div>
         <h3>Équipes formées & certifiées</h3>
-        <p>Chaque agent est formé aux normes HACCP, aux protocoles de désinfection et aux spécificités de l'hôtellerie haut de gamme.</p>
+        <p>Agents formés HACCP, aux protocoles de désinfection et aux exigences de l'hôtellerie.</p>
       </div>
 
       <div class="pourquoi-card reveal reveal-delay-2">
@@ -2714,7 +2516,7 @@
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z"/></svg>
         </div>
         <h3>Réduction des coûts de casse</h3>
-        <p>Notre gestion rigoureuse du matériel réduit les pertes et casses de 30 à 50%, générant des économies substantielles sur vos budgets.</p>
+        <p>Gestion rigoureuse du matériel qui réduit les casses de 30 à 50% sur vos budgets.</p>
       </div>
 
       <div class="pourquoi-card reveal reveal-delay-3">
@@ -2722,40 +2524,7 @@
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12h3.75M9 15h3.75M9 18h3.75m3 .75H18a2.25 2.25 0 002.25-2.25V6.108c0-1.135-.845-2.098-1.976-2.192a48.424 48.424 0 00-1.123-.08m-5.801 0c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 00.75-.75 2.25 2.25 0 00-.1-.664m-5.8 0A2.251 2.251 0 0113.5 2.25H15c1.012 0 1.867.668 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m0 0H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V9.375c0-.621-.504-1.125-1.125-1.125H8.25zM6.75 12h.008v.008H6.75V12zm0 3h.008v.008H6.75V15zm0 3h.008v.008H6.75V18z"/></svg>
         </div>
         <h3>Reporting & traçabilité</h3>
-        <p>Rapports quotidiens, hebdomadaires et mensuels sur l'activité, les anomalies et les indicateurs clés pour une gestion proactive.</p>
-      </div>
-
-      <div class="pourquoi-card reveal reveal-delay-4">
-        <div class="pourquoi-card-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15.59 14.37a6 6 0 01-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 006.16-12.12A14.98 14.98 0 009.631 8.41m5.96 5.96a14.926 14.926 0 01-5.841 2.58m-.119-8.54a6 6 0 00-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 00-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 01-2.448-2.448 14.9 14.9 0 01.06-.312m-2.24 2.39a4.493 4.493 0 00-1.757 4.306 4.493 4.493 0 004.306-1.758M16.5 9a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z"/></svg>
-        </div>
-        <h3>Solutions sur-mesure</h3>
-        <p>Chaque établissement a ses spécificités. Nous construisons un plan de service adapté à votre organisation, vos volumes et vos exigences.</p>
-      </div>
-    </div>
-
-    <div class="certif-banner reveal">
-      <div class="certif-text">
-        <h3 class="section-title">Certifications & conformité</h3>
-        <p>GSS212 opère dans le respect strict des réglementations en vigueur et maintient ses certifications à jour.</p>
-      </div>
-      <div class="certif-badges">
-        <div class="certif-badge">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"/></svg>
-          <span>HACCP</span>
-        </div>
-        <div class="certif-badge">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"/></svg>
-          <span>ISO 9001</span>
-        </div>
-        <div class="certif-badge">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418"/></svg>
-          <span>REACH</span>
-        </div>
-        <div class="certif-badge">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18.75a60.07 60.07 0 0115.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 013 6h-.75m0 0v-.375c0-.621.504-1.125 1.125-1.125H20.25M2.25 6v9m18-10.5v.75c0 .414.336.75.75.75h.75m-1.5-1.5h.375c.621 0 1.125.504 1.125 1.125v9.75c0 .621-.504 1.125-1.125 1.125h-.375m1.5-1.5H21a.75.75 0 00-.75.75v.75m0 0H3.75m0 0h-.375a1.125 1.125 0 01-1.125-1.125V15m1.5 1.5v-.75A.75.75 0 003 15h-.75M15 10.5a3 3 0 11-6 0 3 3 0 016 0zm3 0h.008v.008H18V10.5zm-12 0h.008v.008H6V10.5z"/></svg>
-          <span>Assurance RC Pro</span>
-        </div>
+        <p>Rapports d'activité, bilans d'hygiène et indicateurs clés pour une gestion proactive.</p>
       </div>
     </div>
   </div>
@@ -2955,7 +2724,7 @@
             </div>
             <div class="success-detail-item">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-              Urgence ? Appelez-nous : <a href="tel:+33XXXXXXXXX" style="color:var(--blue)">+33 (0)X XX XX XX XX</a>
+              Urgence ? Appelez-nous : <a href="tel:+212661644961" style="color:var(--blue)">+212 661-644-961</a>
             </div>
           </div>
           <button class="success-reset-btn" id="successReset">Envoyer une autre demande</button>
@@ -3002,8 +2771,18 @@
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/></svg>
               </div>
               <div class="contact-id-body">
-                <strong>Téléphone</strong>
-                <a href="tel:+33XXXXXXXXX">+33 (0)X XX XX XX XX</a>
+                <strong>📞 Fixe</strong>
+                <a href="tel:+212524373808">0524 37 38 08</a>
+              </div>
+            </div>
+
+            <div class="contact-id-row">
+              <div class="contact-id-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 006 3.75v16.5a2.25 2.25 0 002.25 2.25h7.5A2.25 2.25 0 0018 20.25V3.75a2.25 2.25 0 00-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3"/></svg>
+              </div>
+              <div class="contact-id-body">
+                <strong>📱 Portable</strong>
+                <a href="tel:+212661644961">+212 661-644-961</a>
               </div>
             </div>
 
@@ -3012,8 +2791,8 @@
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"/></svg>
               </div>
               <div class="contact-id-body">
-                <strong>Localisation</strong>
-                <span>France — Interventions nationales</span>
+                <strong>📍 Adresse</strong>
+                <span>Mhamid, Marrakech, Maroc</span>
               </div>
             </div>
 
@@ -3090,70 +2869,18 @@
 </button>
 
 <footer id="footer" aria-label="Pied de page GSS212">
-  <div class="container">
-    <div class="footer-top">
-      <div class="footer-brand">
-        <span class="logo-main">GSS212</span>
-        <span class="logo-sub">Gestion de Service Stewarding</span>
-        <p>Votre partenaire expert en stewarding hôtelier et restauration. Disponibles 24h/24, 7j/7, pour des cuisines toujours impeccables.</p>
-        <div class="footer-social">
-          <a href="#" class="footer-social-btn" aria-label="LinkedIn">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
-          </a>
-          <a href="#" class="footer-social-btn" aria-label="Facebook">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
-          </a>
-          <a href="#" class="footer-social-btn" aria-label="Instagram">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
-          </a>
-        </div>
-      </div>
-
-      <div class="footer-col">
-        <h4>Navigation</h4>
-        <ul>
-          <li><a href="#apropos">À propos</a></li>
-          <li><a href="#services">Nos services</a></li>
-          <li><a href="#h24">Service 24h/24</a></li>
-          <li><a href="#clients">Nos clients</a></li>
-          <li><a href="#pourquoi">Expertise</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-col">
-        <h4>Services</h4>
-        <ul>
-          <li><a href="#services">Nettoyage cuisine</a></li>
-          <li><a href="#services">Gestion vaisselle</a></li>
-          <li><a href="#services">Hygiène & HACCP</a></li>
-          <li><a href="#services">Support équipes</a></li>
-          <li><a href="#services">Gestion locaux</a></li>
-          <li><a href="#services">Formation</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-col">
-        <h4>Contact</h4>
-        <ul>
-          <li><a href="mailto:contact@gss212.com">contact@gss212.com</a></li>
-          <li><a href="tel:+33100000000">+33 (0)1 XX XX XX XX</a></li>
-          <li><a href="#contact">Demander un devis</a></li>
-          <li><a href="#contact">Urgences 24h/24</a></li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="footer-bottom">
-      <p class="footer-copy">
-        © 2024 <a href="#">GSS212.com</a> — Gestion de Service Stewarding. Tous droits réservés.
-      </p>
-      <nav class="footer-links-bottom" aria-label="Liens légaux">
-        <a href="#">Mentions légales</a>
-        <a href="#">Politique de confidentialité</a>
-        <a href="#">CGV</a>
-      </nav>
-    </div>
+  <div class="footer-simple">
+    <span class="footer-brand-inline"><strong>GSS212</strong> — Gestion de Service Stewarding</span>
+    <span class="footer-sep">·</span>
+    <a href="tel:+212524373808">0524 37 38 08</a>
+    <span class="footer-sep">·</span>
+    <a href="tel:+212661644961">+212 661-644-961</a>
+    <span class="footer-sep">·</span>
+    <a href="mailto:contact@gss212.com">contact@gss212.com</a>
+    <span class="footer-sep">·</span>
+    <span>Mhamid, Marrakech, Maroc</span>
+    <span class="footer-sep footer-copy-sep">—</span>
+    <span class="footer-copy">© 2025 GSS212.com</span>
   </div>
 </footer>
 
