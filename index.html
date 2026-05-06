@@ -103,6 +103,7 @@
       overflow-x: hidden;
     }
 
+    svg { overflow: visible !important; }
     img { display: block; max-width: 100%; }
     a { color: inherit; text-decoration: none; }
     ul { list-style: none; }
@@ -205,6 +206,7 @@
       background: var(--blue);
       border-bottom: 1px solid rgba(255,255,255,.1);
       transition: box-shadow var(--transition);
+      overflow: visible;
     }
     #navbar.scrolled { box-shadow: 0 4px 24px rgba(20,64,184,.45); }
 
@@ -1960,6 +1962,7 @@
     @media (max-width: 768px) {
       .nav-links, .nav-cta { display: none; }
       .nav-burger { display: flex; }
+      .nav-logo svg { max-width: 100px; }
 
       .hero-stat:not(:last-child) {
         border-right: none;
@@ -1998,9 +2001,9 @@
   <div class="container">
     <nav class="nav-inner">
       <a href="#hero" class="nav-logo" aria-label="GSS212 accueil">
-        <svg width="100" height="65" viewBox="0 0 200 130" xmlns="http://www.w3.org/2000/svg" aria-label="GSS212">
-          <text x="8" y="90" font-size="90" font-weight="900" fill="white" font-family="Arial Black, Arial">GSS</text>
-          <text x="12" y="120" font-size="32" font-weight="800" fill="#F97316" font-family="Arial Black, Arial" letter-spacing="4">212</text>
+        <svg width="120" height="70" viewBox="0 0 240 140" xmlns="http://www.w3.org/2000/svg" aria-label="GSS212" style="overflow:visible;flex-shrink:0;">
+          <text x="0" y="88" font-size="88" font-weight="900" fill="white" font-family="Arial Black, Arial">GSS</text>
+          <text x="4" y="118" font-size="30" font-weight="800" fill="#F97316" font-family="Arial Black, Arial" letter-spacing="6">212</text>
         </svg>
       </a>
 
@@ -2691,9 +2694,9 @@
         <div class="contact-id-card">
           <div class="contact-id-glow" aria-hidden="true"></div>
           <div class="contact-id-logo">
-            <svg width="100" height="65" viewBox="0 0 200 130" xmlns="http://www.w3.org/2000/svg" aria-label="GSS212">
-              <text x="8" y="90" font-size="90" font-weight="900" fill="#1B4FD8" font-family="Arial Black, Arial">GSS</text>
-              <text x="12" y="120" font-size="32" font-weight="800" fill="#F97316" font-family="Arial Black, Arial" letter-spacing="4">212</text>
+            <svg width="120" height="70" viewBox="0 0 240 140" xmlns="http://www.w3.org/2000/svg" aria-label="GSS212" style="overflow:visible;flex-shrink:0;">
+              <text x="0" y="88" font-size="88" font-weight="900" fill="#1B4FD8" font-family="Arial Black, Arial">GSS</text>
+              <text x="4" y="118" font-size="30" font-weight="800" fill="#F97316" font-family="Arial Black, Arial" letter-spacing="6">212</text>
             </svg>
           </div>
           <div class="contact-id-rows">
@@ -2822,9 +2825,9 @@
 
 <footer id="footer" aria-label="Pied de page GSS212">
   <div class="footer-simple">
-    <svg width="100" height="65" viewBox="0 0 200 130" xmlns="http://www.w3.org/2000/svg" aria-label="GSS212">
-      <text x="8" y="90" font-size="90" font-weight="900" fill="white" font-family="Arial Black, Arial">GSS</text>
-      <text x="12" y="120" font-size="32" font-weight="800" fill="#F97316" font-family="Arial Black, Arial" letter-spacing="4">212</text>
+    <svg width="120" height="70" viewBox="0 0 240 140" xmlns="http://www.w3.org/2000/svg" aria-label="GSS212" style="overflow:visible;flex-shrink:0;">
+      <text x="0" y="88" font-size="88" font-weight="900" fill="white" font-family="Arial Black, Arial">GSS</text>
+      <text x="4" y="118" font-size="30" font-weight="800" fill="#F97316" font-family="Arial Black, Arial" letter-spacing="6">212</text>
     </svg>
     <span class="footer-brand-inline">Gestion de Service Stewarding</span>
     <span class="footer-sep">·</span>
