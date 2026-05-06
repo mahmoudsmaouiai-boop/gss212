@@ -1629,24 +1629,15 @@
     #hero .hero-blob-2 { opacity: .3; }
 
     /* 2 ─ À propos — equipe photo */
-    .apropos-photo-wrap {
-      position: relative;
-      border-radius: var(--radius-lg);
-      overflow: hidden;
-      height: 400px;
-      box-shadow: 0 24px 64px rgba(0,0,0,.18);
-    }
-    .apropos-photo-wrap img {
+    .apropos-photo {
       width: 100%;
-      height: 100%;
+      height: 420px;
       object-fit: cover;
       object-position: center;
       display: block;
-      transition: transform 0.6s cubic-bezier(0.4,0,0.2,1);
+      border-radius: 16px;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.15);
     }
-    .apropos-photo-wrap:hover img { transform: scale(1.04); }
-    /* Keep floating badges positioned relative to the photo wrapper */
-    .apropos-photo-wrap .floating-badge { position: absolute; }
 
     /* 3 ─ Service card image header */
     .service-img-wrap {
@@ -1748,11 +1739,11 @@
 
     /* ── Mobile responsive heights ── */
     @media (max-width: 768px) {
-      .apropos-photo-wrap { height: 280px; }   /* 400 × 0.7 */
+      .apropos-photo { height: 280px; }   /* 400 × 0.7 */
       .service-img-wrap   { height: 154px; }   /* 220 × 0.7 */
     }
     @media (max-width: 480px) {
-      .apropos-photo-wrap { height: 220px; }
+      .apropos-photo { height: 220px; }
       .service-img-wrap   { height: 140px; }
     }
 
@@ -2094,35 +2085,14 @@
     <div class="apropos-grid">
 
       <div class="apropos-visual reveal">
-        <div class="apropos-photo-wrap">
-          <img
-            src="https://images.pexels.com/photos/19553654/pexels-photo-19553654.jpeg?auto=compress&cs=tinysrgb&w=1200"
-            alt="Équipe professionnelle de stewarding au travail dans une cuisine d'hôtel"
-            loading="lazy"
-            width="600"
-            height="400"
-          />
-
-          <div class="floating-badge floating-badge-1">
-            <div class="badge-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 01-1.043 3.296 3.745 3.745 0 01-3.296 1.043A3.745 3.745 0 0112 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 01-3.296-1.043 3.745 3.745 0 01-1.043-3.296A3.745 3.745 0 013 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 011.043-3.296 3.746 3.746 0 013.296-1.043A3.746 3.746 0 0112 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 013.296 1.043 3.746 3.746 0 011.043 3.296A3.745 3.745 0 0121 12z"/></svg>
-            </div>
-            <div class="badge-text">
-              <strong>Certifié HACCP</strong>
-              <span>Hygiène alimentaire</span>
-            </div>
-          </div>
-
-          <div class="floating-badge floating-badge-2">
-            <div class="badge-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z"/></svg>
-            </div>
-            <div class="badge-text">
-              <strong>Équipes formées</strong>
-              <span>+50 agents qualifiés</span>
-            </div>
-          </div>
-        </div>
+        <img
+          src="https://images.pexels.com/photos/2544829/pexels-photo-2544829.jpeg?auto=compress&cs=tinysrgb&w=800"
+          alt="Équipe professionnelle de stewarding au travail dans une cuisine d'hôtel"
+          loading="lazy"
+          width="600"
+          height="420"
+          class="apropos-photo"
+        />
       </div>
 
       <div class="apropos-text reveal reveal-delay-2">
